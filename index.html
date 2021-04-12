@@ -139,7 +139,22 @@
   </div>
 </section>
 
+<div style="align: left; text-align:center;">
+    <img src="./static/figures/pull.png" height="31px" width="200px" />
+    <div class="caption">Illustration of our Realistic Residual Block (RRB) model. The knowledge-based
+                model generates a scene-compliant trajectory (yellow dots) which could not effectively
+                account for other agents, hence, is too conservative. Our data-driven RRB improves the 
+                prediction (purple dots) by adding confined residuals conditioned on other agents in the
+                scene (illustrated by the arrows). The blue region shows the physically-constrained output
+                space for our RRB predictions.</div>
+</div>
 
+.caption {
+    width: 200px;
+    text-align: center;
+}
+  
+  
 <section class="hero is-light is-small">
   <div class="hero-body">
     <div class="container">
