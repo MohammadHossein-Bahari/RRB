@@ -2,7 +2,7 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <meta name="description" content="Injecting Knowledge in Data-driven </p> 2Vehicle Trajectory Predictors.">
+  <meta name="description" content="Injecting Knowledge in Data-driven Vehicle Trajectory Predictors.">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Realistic Residual Blocks | RRB</title>
 
@@ -63,19 +63,19 @@
     <div class="container">
       <div class="columns is-centered">
         <div class="column has-text-centered">
-          <h1 class="title is-1 publication-title">Injecting Knowledge in Data-driven Vehicle Trajectory Predictors</h1>
+          <h1 class="title is-1 publication-title">Injecting Knowledge in Data-driven </p> 2Vehicle Trajectory Predictors</h1>
           <div class="is-size-5 publication-authors">
             <span class="author-block">
-              <a href="http://mohammadhossein-bahari.github.io">Mohammadhossein Bahari</a><sup>1</sup>,</span>
+              <a href="http://mohammadhossein-bahari.github.io">Mohammadhossein Bahari</a></sup>,</span>
             <span class="author-block">
-              <a href="">Ismail Nejjar</a><sup>1</sup>,</span>
+              <a href="https://people.epfl.ch/ismail.nejjar?lang=en">Ismail Nejjar</a></sup>,</span>
             <span class="author-block">
-              <a href="">Alexandre Alahi</a><sup>1</sup>,
+              <a href="https://people.epfl.ch/alexandre.alahi?lang=en">Alexandre Alahi</a></sup>,
             </span>           
           </div>
 
           <div class="is-size-5 publication-authors">
-            <span class="author-block"><sup>1</sup>ecole polytechnique fédérale de lausanne (EPFL),</span>
+            <span class="author-block"></sup>Ecole Polytechnique Fédérale de Lausanne (EPFL),</span>
           </div>
 
           <div class="column has-text-centered">
@@ -97,16 +97,6 @@
                       <i class="ai ai-arxiv"></i>
                   </span>
                   <span>arXiv</span>
-                </a>
-              </span>
-              <!-- Video Link. -->
-              <span class="link-block">
-                <a href=""
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                      <i class="fab fa-youtube"></i>
-                  </span>
-                  <span>Video</span>
                 </a>
               </span>
               <!-- Code Link. -->
@@ -132,13 +122,17 @@
   <div class="hero-body">
     <div class="columns is-centered">
       <div class="column is-8">
-        <video id="teaser" autoplay muted loop height="100%">
-          <source src=""
-                  type="video/mp4">
-        </video>
+        <image id="pull" height="100%">
+          <source src="https://github.com/MohammadHossein-Bahari/RRB/tree/main/static/figures/pull.png"
+                  type="image/png">
+        </image>
         <h2 class="subtitle has-text-centered">
-          <span class="dnerf">D-NeRF</span> turns selfie videos from your phone into free-viewpoint
-          portraits (<i>nerfies</i>).
+          <span class=Illustration of our Realistic Residual Block (RRB) model. The knowledge-based
+                model generates a scene-compliant trajectory (yellow dots) which could not effectively
+                account for other agents, hence, is too conservative. Our data-driven RRB improves the 
+                prediction (purple dots) by adding confined residuals conditioned on other agents in the
+                scene (illustrated by the arrows). The blue region shows the physically-constrained output
+                space for our RRB predictions..
         </h2>
       </div>
     </div>
@@ -204,113 +198,6 @@
 </section>
 
 
-<section class="section">
-  <div class="container">
-
-    <div class="columns is-centered">
-
-      <!-- Visual Effects. -->
-      <div class="column">
-        <div class="content">
-          <h2 class="title is-2">Visual Effects</h2>
-          <p>
-            Using <i>nerfies</i> you can create fun visual effects. This Dolly zoom effect
-            would be impossible without nerfies since it would require going through a wall.
-          </p>
-          <video id="dollyzoom" autoplay controls muted loop height="100%">
-            <source src="https://homes.cs.washington.edu/~kpar/nerfies/videos/dollyzoom-stacked.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-      </div>
-      <!--/ Visual Effects. -->
-
-      <!-- Matting. -->
-      <div class="column">
-        <h2 class="title is-2">Matting</h2>
-        <div class="columns is-centered">
-          <div class="column content">
-            <p>
-              As a byproduct of our method, we can also solve the matting problem by ignoring
-              samples that fall outside of a bounding box during rendering.
-            </p>
-            <video id="matting-video" controls height="100%">
-              <source src="https://homes.cs.washington.edu/~kpar/nerfies/videos/matting.mp4"
-                      type="video/mp4">
-            </video>
-          </div>
-
-        </div>
-      </div>
-    </div>
-    <!--/ Matting. -->
-
-    <!-- Animation. -->
-    <div class="columns is-centered">
-      <div class="column is-full-width">
-        <h2 class="title is-2">Animation</h2>
-
-        <!-- Interpolating. -->
-        <h3 class="title is-4">Interpolating states</h3>
-        <div class="content has-text-justified">
-          <p>
-            We can also animate the scene by interpolating the deformation latent codes of two input
-            frames. Use the slider here to linearly interpolate between the left frame and the right
-            frame.
-          </p>
-        </div>
-        <div class="columns is-vcentered interpolation-panel">
-          <div class="column is-2 has-text-centered">
-            <img src="https://homes.cs.washington.edu/~kpar/nerfies/images/interpolate_start.jpg"
-                 class="interpolation-image"
-                 alt="Interpolate start reference image."/>
-            <p>Start Frame</p>
-          </div>
-          <div class="column interpolation-video-column">
-            <div id="interpolation-image-wrapper">
-              Loading...
-            </div>
-            <input class="slider is-fullwidth is-large is-info"
-                   id="interpolation-slider"
-                   step="1" min="0" max="100" value="0" type="range">
-          </div>
-          <div class="column is-2 has-text-centered">
-            <img src="https://homes.cs.washington.edu/~kpar/nerfies/images/interpolate_end.jpg"
-                 class="interpolation-image"
-                 alt="Interpolation end reference image."/>
-            <p class="is-bold">End Frame</p>
-          </div>
-        </div>
-        <br/>
-        <!--/ Interpolating. -->
-
-        <!-- Re-rendering. -->
-        <h3 class="title is-4">Re-rendering the input video</h3>
-        <div class="content has-text-justified">
-          <p>
-            Using <span class="dnerf">D-NeRF</span>, you can re-render a video from a novel
-            viewpoint such as a stabilized camera by playing back the training deformations.
-          </p>
-        </div>
-        <div class="content has-text-centered">
-          <video id="replay-video"
-                 controls
-                 muted
-                 preload
-                 width="75%">
-            <source src=" "
-                    type="video/mp4">
-          </video>
-        </div>
-        <!--/ Re-rendering. -->
-
-      </div>
-    </div>
-    <!--/ Animation. -->
-  </div>
-</section>
-
-
 <section class="section" id="BibTeX">
   <div class="container content">
     <h2 class="title">BibTeX</h2>
@@ -337,12 +224,7 @@
     <div class="columns is-centered">
       <div class="column is-8">
         <div class="content">
-          <p>
-            This website is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
-          </p>
-          <p>
-            This means you are free to borrow the <a href="https://github.com/nerfies/nerfies.github.io">source code</a> of this website, we just ask that you link back to this page in the footer.
-            Please remember to remove the analytics code included in the header of the website which you do not want on your website.
+            This page is created using this <a href="https://github.com/nerfies/nerfies.github.io">source code</a>.
           </p>
         </div>
       </div>
