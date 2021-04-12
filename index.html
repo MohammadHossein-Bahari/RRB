@@ -137,21 +137,6 @@
     </div>
   </div>
 </section>
-  
-  
-<section class="hero is-light is-small">
-  <div class="hero-body">
-    <div class="container">
-      <div id="results-carousel" class="carousel results-carousel">
-        <div class="item item-steve">
-          <video poster="" id="steve" autoplay controls muted loop height="100%">
-            <source src=""
-                    type="video/mp4">
-          </video>              
-      </div>
-    </div>
-  </div>
-</section>
 
 
 <section class="section">
@@ -182,20 +167,46 @@
     </div>
   </div>
   <!--/ Abstract. -->
-
-  <!-- Paper video. -->
-  <div class="columns is-centered has-text-centered">
-    <div class="column is-two-thirds">
-      <h2 class="title is-2">Video</h2>
-      <div class="publication-video">
-        <iframe src=""
-                frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-      </div>
-    </div>
-  </div>
-  <!--/ Paper video. -->
 </section>
 
+<section class="section">
+  <div class="container">
+    
+    <!--/ overal net. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-two-thirds">
+        <h2 class="title is-2">Model Structure</h2>
+        <div style="align: left; text-align:center;">
+          <img src="./static/figures/overal.png"/>
+          <div class="caption"> Our proposed Realistic Residual Block (RRB) takes as input
+            (i) the state of the scene, St, and (ii) the knowledge-driven prediction, y^kd. 
+            The Residual estimator block builds physically-constrained residuals y^res. Then, 
+            the IVW-addition block merges y^kd and y^res by Inverse-Variance Weighted sum and
+            forms y^ref according to equation 3. Finally, Model Predictive Controller (MPC) 
+            satisfies the kinematic constraints.
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--/ overal net. -->
+ 
+    <!--/ detailed net. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-two-thirds">
+        <div style="align: left; text-align:center;">
+          <img src="./static/figures/detailed.png"/>
+          <div class="caption"> The ’Residual estimator’ block inside our RRB.
+            Three encoders are employed to embed the history, the interactions,
+            and the KD trajectory. The residual decoder integrates the features and
+            estimates the residual distribution. The mean of the distribution is confined
+            to C, a real-word extracted parameter.
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--/ detailed net. -->
+  </div>
+</section>
 
 <section class="section" id="BibTeX">
   <div class="container content">
